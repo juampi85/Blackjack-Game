@@ -1,39 +1,5 @@
-
-
-
-
-// const { value: nickName } = await Swal.fire({
-//     title: 'Enter your NickName, please',
-//     input: 'text',
-//     // inputLabel: 'Your IP address',
-//     inputValue: inputValue,
-//     showCancelButton: true,
-//     inputValidator: (value) => {
-//       if (!value) {
-//         return 'You need to write something!'
-//       }
-//     }
-//   })
-  
-//   if (nickName) {
-//     Swal.fire(`Your NickName is ${nickName}`)
-//   }
-
-
-// Swal.fire({
-//     title: "An input!",
-//     text: "Write something interesting:",
-//     input: 'text',
-//     showCancelButton: true        
-// }).then((result) => {
-//     if (result.value) {
-//         console.log("Result: " + result.value);
-//     }
-// });
-
 let player = {
     name: prompt("Enter your NickName, please"),
-    // name: "Juampi",
     chips: 250
 }
 
@@ -113,7 +79,6 @@ function renderGame() {
     messageEl.textContent = message;
     playerEl.textContent = `${player.name}: $${player.chips}`;
 }
-
 
 function newCard() {
     if (isAlive === true && hasBlackJack === false) {
